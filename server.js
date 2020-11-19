@@ -16,5 +16,5 @@ const ENTIRE_API_URL = `${API_URL}${LOCATION_ZIP_CODE},${COUNTRY_CODE}&appid=${A
   axios.get(ENTIRE_API_URL)
     .then(response => { status = response.status ; console.log(response.status)})
     .catch(error => console.log('Error', error));
-response.end('Status--'+status);
+response.end('Status --'+status);
 }).listen(8081);
